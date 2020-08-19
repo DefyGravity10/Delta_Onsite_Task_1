@@ -3,10 +3,24 @@ var ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
+canvas.style.display="none";
+document.getElementById("panel").style.display="none";
+
+var colours=["red","blue","green","black","yellow"];
+
+function start(){
+    document.getElementById("Start").style.display="none";
+    canvas.style.display="block";
+    document.getElementById("panel").style.display="block";
+}
+
+function panel(x)
+{
+    ctx.strokeStyle=colours[x];
+}
+
 ctx.lineWidth=2;
 ctx.lineJoin="round";
-ctx.strokeStyle="black";
-
 
 var mouse={
     x:0,
