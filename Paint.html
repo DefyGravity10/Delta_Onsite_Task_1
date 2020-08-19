@@ -2,21 +2,29 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <link href="Paint.css" rel="stylesheet">
     </head>
     <body>
         <main>
             <div id="Start">
                 <h1>JAVASCRIPT PAINT</h1>
                 <h2>Welcome to Paint</h2>
-                <p>Let your craetivity loose and go wild</p>
-                <button type="button" value="PAINT" onclick="start()"></button>
+                <p>Let your creativity loose and go wild</p>
+                <div id="buttons">
+                    <button class="butto" onclick="start()">PAINT</button>
+                </div>
             </div>
             <div id="panel">
-                <button type="button" value="R" onclick="panel(0)"></button>
-                <button type="button" value="G" onclick="panel(1)"></button>
-                <button type="button" value="B" onclick="panel(2)"></button>
-                <button type="button" value="B" onclick="panel(3)"></button>
-                <button type="button" value="Y" onclick="panel(4)"></button>
+                <button class="button" onclick="panel(2)">Green</button>
+                <button class="button button2" onclick="panel(1)">Blue</button>
+                <button class="button button3" onclick="panel(0)">Red</button>
+                <button class="button button4" onclick="panel(4)">Yellow</button>
+                <button class="button button5" onclick="panel(3)">Black</button>
+                <button class="button button6" onclick="shape(0)">CURVE</button>
+                <button class="button button7" onclick="shape(1)">ERASE</button>
+                <button class="button button8" onclick="shape(2)">RECTANGLE</button>
+                <button class="button button9" onclick="shape(3)">CIRCLE</button>
+
             </div>
             <canvas id="canvas"></canvas>
         </main>
