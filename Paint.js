@@ -25,6 +25,10 @@ canvas.addEventListener("mousedown",function(e){
     canvas.addEventListener("mousemove",paint);
 });
 
+canvas.addEventListener("mouseup",function(){
+    canvas.removeEventListener("mousemove",paint);
+});
+
 function paint(){
     ctx.lineTo(mouse.x,mouse.y);
     ctx.stroke();
